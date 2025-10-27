@@ -1,42 +1,201 @@
-nav#topmenu ul{
- list-style: none;
- background-color: rgb(161, 94, 224);
- text-align: center;
- padding: 0;
- margin: 0;   
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav#topmenu li{
-    font-family: Georgia, 'Times New Roman', Times, serif ;
-    font-size: 16px;
-    line-height: 40px;
-    height: 40px;
-    display: inline-block;
-    padding: 20px;
+/*HOME PAGE*/
+body {
+  background-color: #0b0b0b;
+  color: #e0e0e0;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-nav#topmenu a{
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 2px solid #800000;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #b30000;
+  text-shadow: 0 0 10px #440000;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #ccc;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Navigation Bar  */
+nav#topmenu {
+  background-color: #1a1a1a;
+  padding: 15px 0;
+  text-align: center;
+  border-bottom: 2px solid #400000;
+}
+
+nav#topmenu ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 30px;
+}
+
+nav#topmenu ul li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav#topmenu ul li a:hover {
+  color: #ff3333;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+/* Main Section  */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #121212;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.1);
+}
+
+.intro h2 {
+  color: #b30000;
+  border-bottom: 1px solid #660000;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 1.1em;
+  color: #ccc;
+}
+
+#home {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #151515;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.15);
+}
+
+#home h2 {
+  color: #b30000;
+  margin-bottom: 10px;
+}
+
+#home ul {
+  margin: 15px 0 25px 25px;
+  list-style-type: square;
+}
+
+#home ul li {
+  margin: 8px 0;
+  color: #d3d3d3;
+}
+
+#home p {
+  color: #cfcfcf;
+  font-size: 1.05em;
+}
+
+/* Footer */
+h3 {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: normal;
+  color: #ccc;
+}
+
+h3 a {
+  color: #ff3333;
+  font-weight: bold;
+  transition: text-shadow 0.3s ease;
+}
+
+h3 a:hover {
+  text-shadow: 0 0 10px #ff0000;
+}
+
+a {
+  cursor: pointer;
+}
+
+ul li::marker {
+  color: #800000;
+}
+
+
+/* REVIEWS PAGE*/
+
+h2{
+  color: #b30000;
+  text-align: center;
+  border-bottom: 1px solid #660000;
+  margin-top: 30px;
+}
+
+h3.review{
+    color: #ff4d4d;
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+
+p{
+  color: #cfcfcf;
+  font-size: 1.05em;
+  margin-bottom: 40px ;
+  border-bottom: 1px solid #660000;
+}
+
+/*table*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+table thead tr {
+  background-color: #800000;
+  color: #fff;
+  text-align: left;
+  font-weight: bold;
+}
+
+table th, table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #333;
+}
+
+/*thoughts*/
+.thoughts img{
+    border-radius: 8px;
+    border: 5px solid #b30000;
+    object-position: left;
+    width: 20%;
+}
+
+.social li{
     text-decoration: none;
-    color: black;
-}
-
-nav#topmenu a:hover{
-    text-decoration: none;
-    color: beige;
-}
-
-div#home{
-    background: transparent;
-    text-align: center;
-    margin: 150px 150px 150px 150px;
-}
-
-#name{
-    margin-top: 0px ;
-    text-align: center;
-}
-
-#index{
-    background-color: rgb(39, 39, 39);
-    color: antiquewhite;
+    color: #cfcfcf;
 }
