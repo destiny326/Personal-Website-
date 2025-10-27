@@ -35,3 +35,8 @@ div#home{
     margin-top: 0px ;
     text-align: center;
 }
+
+#index{
+    background-color: rgb(39, 39, 39);
+    color: antiquewhite;
+}
